@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contege">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tyle.css">
+    <script src="./main.js"></script>
+    <title>JavaScript Vergi hesaplama Formu</title>
+</head>
+
+<body onload="yillar()">
+    <h2>Taşıt Vergisi Hesaplama Formu</h2>
+    <form action="#" id="vergiFormu">
+        <label for="aracTipi" class="aracTipi">Araç Tipi Seçiniz</label>
+        <select name="" id="aracTipi" size="2">
+            <option value="motorsiklet">Motorsiklet</option>
+            <option value="otomobil">Otomobil</option>
+            <option value="kamyonet">Kamyonet</option>
+            <option value="kamyon">Kamyon</option>
+        </select>
+        <label for="motorGucu">Aracın motor gücünü seçiniz</label>
+        <span>
+            <input type="radio" name="motorGucu" id="secenek1" value="999cc">
+            <label for="secenek1">999 cc altı</label>
+            <input type="radio" name="motorGucu" id="secenek2" value="1000cc-1600cc">
+            <label for="secenek2">1000cc-1600cc arası</label>
+            <input type="radio" name="motorGucu" id="secenek3" value="1601cc-2000cc">
+            <label for="secenek3">1601 cc- 2000 cc arası</label>
+            <input type="radio" name="motorGucu" id="secenek4" value="2001cc">
+            <label for="secenek4">2001 cc üstü</label>
+        </span>
+        <label for="aracYili"> Araç Model yılını Seçiniz!</label>
+        <select name="" id="aracYili">
+            <option value="default">Yıl Seçiniz</option>
+        </select>
+        <input type="button" name="" value="Vergiyi Hesapla" onClick="hesapla();">
+    </form>
+    <h5 id="sonuc"></h5>
+</body>
+</html>
